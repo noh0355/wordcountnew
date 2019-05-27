@@ -1,0 +1,16 @@
+<h1>result</h1>
+
+전체글자
+{{total}}
+
+<br><br>
+단어의 개수
+{{split}}
+
+<br><br>
+단어띄우기
+{% for word, val in dictionary %}
+
+{{word}} : {{val}}
+<br>
+{%endfor%}

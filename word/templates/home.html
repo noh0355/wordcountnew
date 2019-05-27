@@ -1,0 +1,20 @@
+<h1>WORDCOUNT 집</h1>
+ 
+<form action ="{% url 'result' %}" method="Post">{% csrf_token %}
+    <input type="text" style="height: 100px; width:100px;" name="fulltext">
+    <input type="submit" value="count!!">  
+</form>
+
+<a href="{%url 'about'%}">about</a> 
+
+<h1>로또 당첨 프로그램(띄워서 입력해 주세요1~50)</h1>
+<form action ="{% url 'result2' %}">
+    <input type="text" style="height: 50px; width:300px;" name="count">
+    <input type="submit" value="count!!">  
+</form>
+
+<h1>야구게임!!</h1>
+<form action ="{% url 'result3' %}">
+    <input type="text" style="height: 50px; width:100px;" name="count1">
+    <input type="submit" value="count!!">  
+</form>
